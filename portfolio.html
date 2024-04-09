@@ -4,13 +4,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Portfolio</title>
+  <title>Resumo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <meta name="description" content="Leven - Resume / CV / vCard Template" />
   <meta name="keywords" content="vcard, resposnive, retina, resume, jquery, css3, bootstrap, portfolio" />
   <meta name="author" content="Thomas" />
   <link rel="shortcut icon" href="./img/icones/code-optimisation.svg">
-
 
   <link rel="stylesheet" href="css/normalize.css" type="text/css">
   <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
@@ -56,37 +55,26 @@
 
           <!-- Navigation -->
           <div class="site-nav mobile-menu-hide">
-            <ul>
-              <!--Inicio -->
+            <ul class="leven-classic-menu site-main-menu">
               <li class="menu-item menu-item-has-children">
                 <a href="index.html">Inicio</a>
               </li>
-              <!--Sobre Mim  -->
-              <li class="menu-item">
-                <a href="index.html">Sobre Mim</a>
-              </li>
-              <!--Resumos  -->
-              <li class="menu-item">
+
+              <li class="menu-item menu-item-has-children">
                 <a href="resume.html">Resumo</a>
               </li>
-              <!--Portifolio -->
-              <li class="menu-item menu-item-has-children">
-                <a href="portfolio.html">Portfolio</a>
-              </li>
-              <!--Contatos -->
+
               <li class="menu-item">
                 <a href="contact.html">Contato</a>
               </li>
             </ul>
           </div>
+
           <a class="menu-toggle mobile-visible">
             <i class="fa fa-bars"></i>
           </a>
         </div>
       </header>
-
-
-
       <!-- /Header -->
 
       <div id="main" class="site-main">
@@ -94,225 +82,228 @@
           <div id="primary" class="content-area">
 
             <div class="page-title">
-              <h1>Portfolio</h1>
-              <div class="page-subtitle">
-                <h4> Meus Trabalhos</h4>
-              </div>
-            </div>
+              <h1>Portifolio</h1>
+            <div class="page-subtitle">
+              <h4> Meus Trabalhos</h4>
+              <div>Última atualização: <span id="ultima-atualizacao"></span></div>
+            </div>  
+          </div>
 
-            <div id="content" class="page-content site-content single-post" role="main">
-              <div class="row">
-                <div class="col-xs-12 col-sm-12">
-                  <div id="portfolio_content_q" class="portfolio-content">
-                    <!-- Links de Páginas -->
-                    <ul class="portfolio-filters">
-                      <li class="active">
-                        <a class="filter btn btn-sm btn-link" data-group="category_all">Ver todos</a>
-                      </li>
-                      <li>
-                        <a class="filter btn btn-sm btn-link" data-group="category_detailed">Detalhes</a>
-                      </li>
-                      <li>
-                        <a class="filter btn btn-sm btn-link" data-group="category_direct-url">URL do Projeto</a>
-                      </li>
-                      <li>
-                        <a class="filter btn btn-sm btn-link" data-group="category_image">Imagens</a>
-                      </li>
-                    </ul>
-                    <!-- Fim dos Links da Páginas -->
+          <div id="content" class="page-content site-content single-post" role="main">
+            <div class="row">
+              <div class="col-xs-12 col-sm-12">
+                <div id="portfolio_content_q" class="portfolio-content">
+                  <!-- Links de Páginas -->
+                  <ul class="portfolio-filters">
+                    <li class="active">
+                      <a class="filter btn btn-sm btn-link" data-group="category_all">Ver todos</a>
+                    </li>
+                    <li>
+                      <a class="filter btn btn-sm btn-link" data-group="category_detailed">Detalhes</a>
+                    </li>
+                    <li>
+                      <a class="filter btn btn-sm btn-link" data-group="category_direct-url">URL do Projeto</a>
+                    </li>
+                    <li>
+                      <a class="filter btn btn-sm btn-link" data-group="category_image">Imagens</a>
+                    </li>
+                  </ul>
+                  <!-- Fim dos Links da Páginas -->
 
-                    <!-- Início dos Projetos Barbearia  -->
-                    <div class="portfolio-grid three-columns shuffle">
-                      <!-- Início do Portfólio "category_all", "category_detailed" -->
-                      <figure class="item standard" data-groups='["category_all", "category_detailed"]'>
-                        <div class="portfolio-item-img">
-                          <img src=".//img/portfolio/Call of Dutty/main.png" alt="call-of-dutty"
-                            title="call-of-dutty" />
-                          <a href="./portifolios/wwii-colunas.html" class="ajax-page-load"></a>
-                        </div>
-                        <!-- Nome do Projeto -->
-                        <i class="far fa-file-alt"></i>
-                        <h4 class="name">Call of Dutty </h4>
-                          <span class="category">Detalhes</span>
-                      </figure>
-                      <!-- Fim do Portfólio "category_all",  "category_image" -->
-                      <figure class="item lbimage" data-groups='["category_all", "category_image"]'>
-                        <div class="portfolio-item-img">
-                          <img src="./img/portfolio/Call of Dutty/cont1.png" alt="call-of-dutty"
-                            title="call-of-dutty" />
-                          <a class="lightbox" title="WWII" href="/img/portfolio/Call of Dutty/cont1.png"></a>
-                        </div>
-                        <!-- Nome do Projeto -->
-                        <i class="fa fa-image"></i>
-                        <h4 class="name">WWII</h4>
-                        <span class="category">Image</span>
-                      </figure>
-                      <!-- Início do Portfólio "category_all",  "category_direct-url" -->
-                      <figure class="item direct" data-groups='["category_all", "category_direct-url"]'>
-                        <div class="portfolio-item-img">
-                          <img src="img/portfolio/Call of Dutty/cont2.png" alt="Direct URL" title="call-of-dutty" />
-                          <a target="_blank" href="https://thmedu.github.io/Projeto-Call-of-Duty-WWII/"></a>
-                        </div>
-                        <!-- Nome do Projeto -->
-                        <i class="fa fa-link"></i>
-                        <h4 class="name">Site</h4>
-                        <span class="category">URL</span>
-                      </figure>
-                    </div>
-                    <!-- Fim dos Projeto call of dutty -->
-
-
-                    <!-- Início do Projeto GTA -->
-                    <div class="portfolio-grid three-columns shuffle">
-                      <!-- Início do Portfólio "category_all", "category_detailed" -->
-                      <figure class="item standard" data-groups='["category_all", "category_detailed"]'>
-                        <div class="portfolio-item-img">
-                          <img src="./img/portfolio/GTA/GTA 2.png" alt="GTA V" title="GTA V" />
-                          <a href="./portifolios/gta-colunas.html" class="ajax-page-load"></a>
-                        </div>
-                        <!-- Nome do Projeto -->
-                        <i class="far fa-file-alt"></i>
-                        <h4 class="name">GTA V</h4>
-                        <span class="category">Detalhes</span>
-                      </figure>
-                      <!-- Fim do Portfólio "category_all",  "category_image" -->
-                      <figure class="item lbimage" data-groups='["category_all", "category_image"]'>
-                        <div class="portfolio-item-img">
-                          <img src=".//img/portfolio/GTA/Atualizaçoes.png" alt="GTA V" title="GTA V" />
-                          <a class="lightbox" title="GTA V" href="./img/portfolio/GTA/Atualizaçoes.png"></a>
-                        </div>
-                        <!-- Nome do Projeto -->
-                        <i class="fa fa-image"></i>
-                        <h4 class="name">GTA V</h4>
-                        <span class="category">Image</span>
-                      </figure>
-                      <!-- Início do Portfólio "category_all",  "category_direct-url" -->
-                      <figure class="item direct" data-groups='["category_all", "category_direct-url"]'>
-                        <div class="portfolio-item-img">
-                          <img src=".//img/portfolio/GTA/Card the auto online.png" alt="Direct URL"
-                            title="Card the auto online" />
-                          <a target="_blank" href="https://project-gtav.netlify.app/"></a>
-                        </div>
-                        <!-- Nome do Projeto -->
-                        <i class="fa fa-link"></i>
-                        <h4 class="name">Site</h4>
-                        <span class="category">URL</span>
-                      </figure>
-                    </div>
-                    <!-- Fim dos Projeto GTA -->
-
-
-                    <!-- Início dos Projetos Cafeteria  -->
-                    <div class="portfolio-grid three-columns shuffle">
-                      <!-- Início do Portfólio "category_all", "category_detailed" -->
-                      <figure class="item standard" data-groups='["category_all", "category_detailed"]'>
-                        <div class="portfolio-item-img">
-                          <img src=".//img/portfolio/Cafeteria/menu.png" alt="Cafeteria" title="Cafeteria" />
-                          <a href="./portifolios/cafe-colunas.html" class="ajax-page-load"></a>
-                        </div>
-                        <!-- Nome do Projeto -->
-                        <i class="far fa-file-alt"></i>
-                        <h4 class="name">Cafeteria</h4>
-                        <span class="category">Detalhes</span>
-                      </figure>
-                      <!-- Fim do Portfólio "category_all",  "category_image" -->
-                      <figure class="item lbimage" data-groups='["category_all", "category_image"]'>
-                        <div class="portfolio-item-img">
-                          <img src=".//img/portfolio/Cafeteria/container1.png" alt="Cafeteria" title="Cafeteria" />
-                          <a class="lightbox" title="Cafeteria" href=".//img/portfolio/Cafeteria/container1.png"></a>
-                        </div>
-                        <!-- Nome do Projeto -->
-                        <i class="fa fa-image"></i>
-                        <h4 class="name">Cafeteria</h4>
-                        <span class="category">Image</span>
-                      </figure>
-                      <!-- Início do Portfólio "category_all",  "category_direct-url" -->
-                      <figure class="item direct" data-groups='["category_all", "category_direct-url"]'>
-                        <div class="portfolio-item-img">
-                          <img src=".//img/portfolio/Cafeteria/clients.png" alt="Direct URL" title="Cafeteria" />
-                          <a target="_blank" href="https://thmedu.github.io/Projeto-Cafeteria/"></a>
-                        </div>
-                        <!-- Nome do Projeto -->
-                        <i class="fa fa-link"></i>
-                        <h4 class="name">Site</h4>
-                        <span class="category">URL</span>
-                      </figure>
-                    </div>
-                    <!-- Fim dos Projeto Cafeteria-->
-
-
-                    <!-- Início dos Projetos Barbearia  -->
-                    <div class="portfolio-grid three-columns shuffle">
-                      <!-- Início do Portfólio "category_all", "category_detailed" -->
-                      <figure class="item standard" data-groups='["category_all", "category_detailed"]'>
-                        <div class="portfolio-item-img">
-                          <img src=".//img/portfolio/Barbearia/heder.png" alt="Barbearia" title="Barbearia" />
-                          <a href="./portifolios/barber.colunas.html" class="ajax-page-load"></a>
-                        </div>
-                        <!-- Nome do Projeto -->
-                        <i class="far fa-file-alt"></i>
-                        <h4 class="name">Barbearia</h4>
-                        <span class="category">Detalhes</span>
-                      </figure>
-                      <!-- Fim do Portfólio "category_all",  "category_image" -->
-                      <figure class="item lbimage" data-groups='["category_all", "category_image"]'>
-                        <div class="portfolio-item-img">
-                          <img src="./img/portfolio/Barbearia/container.png" alt="Barbearia" title="Barbearia" />
-                          <a class="lightbox" title="Cafeteria" href="./img/portfolio/Barbearia/container.png"></a>
-                        </div>
-                        <!-- Nome do Projeto -->
-                        <i class="fa fa-image"></i>
-                        <h4 class="name">Barbearia</h4>
-                        <span class="category">Image</span>
-                      </figure>
-                      <!-- Início do Portfólio "category_all",  "category_direct-url" -->
-                      <figure class="item direct" data-groups='["category_all", "category_direct-url"]'>
-                        <div class="portfolio-item-img">
-                          <img src="img/portfolio/Barbearia/formulario.png" alt="Direct URL" title="Barbearia" />
-                          <a target="_blank" href="https://thmedu.github.io/Projeto-Barbearia/"></a>
-                        </div>
-                        <!-- Nome do Projeto -->
-                        <i class="fa fa-link"></i>
-                        <h4 class="name">Site</h4>
-                        <span class="category">URL</span>
-                      </figure>
-                    </div>
-                    <!-- Fim dos Projeto Barbearia -->
-
-
+                  <!-- Início dos Projetos Barbearia  -->
+                  <div class="portfolio-grid three-columns shuffle">
+                    <!-- Início do Portfólio "category_all", "category_detailed" -->
+                    <figure class="item standard" data-groups='["category_all", "category_detailed"]'>
+                      <div class="portfolio-item-img">
+                        <img src=".//img/portfolio/Call of Dutty/main.png" alt="call-of-dutty" title="call-of-dutty" />
+                        <a href="./portifolios/wwii-colunas.html" class="ajax-page-load"></a>
+                      </div>
+                      <!-- Nome do Projeto -->
+                      <i class="far fa-file-alt"></i>
+                      <h4 class="name">Call of Dutty </h4>
+                      <span class="category">Detalhes</span>
+                    </figure>
+                    <!-- Fim do Portfólio "category_all",  "category_image" -->
+                    <figure class="item lbimage" data-groups='["category_all", "category_image"]'>
+                      <div class="portfolio-item-img">
+                        <img src="./img/portfolio/Call of Dutty/cont1.png" alt="call-of-dutty" title="call-of-dutty" />
+                        <a class="lightbox" title="WWII" href="/img/portfolio/Call of Dutty/cont1.png"></a>
+                      </div>
+                      <!-- Nome do Projeto -->
+                      <i class="fa fa-image"></i>
+                      <h4 class="name">WWII</h4>
+                      <span class="category">Image</span>
+                    </figure>
+                    <!-- Início do Portfólio "category_all",  "category_direct-url" -->
+                    <figure class="item direct" data-groups='["category_all", "category_direct-url"]'>
+                      <div class="portfolio-item-img">
+                        <img src="img/portfolio/Call of Dutty/cont2.png" alt="Direct URL" title="call-of-dutty" />
+                        <a target="_blank" href="https://thmedu.github.io/Projeto-Call-of-Duty-WWII/"></a>
+                      </div>
+                      <!-- Nome do Projeto -->
+                      <i class="fa fa-link"></i>
+                      <h4 class="name">Site</h4>
+                      <span class="category">URL</span>
+                    </figure>
                   </div>
+                  <!-- Fim dos Projeto call of dutty -->
+
+
+                  <!-- Início do Projeto GTA -->
+                  <div class="portfolio-grid three-columns shuffle">
+                    <!-- Início do Portfólio "category_all", "category_detailed" -->
+                    <figure class="item standard" data-groups='["category_all", "category_detailed"]'>
+                      <div class="portfolio-item-img">
+                        <img src="./img/portfolio/GTA/GTA 2.png" alt="GTA V" title="GTA V" />
+                        <a href="./portifolios/gta-colunas.html" class="ajax-page-load"></a>
+                      </div>
+                      <!-- Nome do Projeto -->
+                      <i class="far fa-file-alt"></i>
+                      <h4 class="name">GTA V</h4>
+                      <span class="category">Detalhes</span>
+                    </figure>
+                    <!-- Fim do Portfólio "category_all",  "category_image" -->
+                    <figure class="item lbimage" data-groups='["category_all", "category_image"]'>
+                      <div class="portfolio-item-img">
+                        <img src=".//img/portfolio/GTA/Atualizaçoes.png" alt="GTA V" title="GTA V" />
+                        <a class="lightbox" title="GTA V" href="./img/portfolio/GTA/Atualizaçoes.png"></a>
+                      </div>
+                      <!-- Nome do Projeto -->
+                      <i class="fa fa-image"></i>
+                      <h4 class="name">GTA V</h4>
+                      <span class="category">Image</span>
+                    </figure>
+                    <!-- Início do Portfólio "category_all",  "category_direct-url" -->
+                    <figure class="item direct" data-groups='["category_all", "category_direct-url"]'>
+                      <div class="portfolio-item-img">
+                        <img src=".//img/portfolio/GTA/Card the auto online.png" alt="Direct URL"
+                          title="Card the auto online" />
+                        <a target="_blank" href="https://project-gtav.netlify.app/"></a>
+                      </div>
+                      <!-- Nome do Projeto -->
+                      <i class="fa fa-link"></i>
+                      <h4 class="name">Site</h4>
+                      <span class="category">URL</span>
+                    </figure>
+                  </div>
+                  <!-- Fim dos Projeto GTA -->
+
+
+                  <!-- Início dos Projetos Cafeteria  -->
+                  <div class="portfolio-grid three-columns shuffle">
+                    <!-- Início do Portfólio "category_all", "category_detailed" -->
+                    <figure class="item standard" data-groups='["category_all", "category_detailed"]'>
+                      <div class="portfolio-item-img">
+                        <img src=".//img/portfolio/Cafeteria/menu.png" alt="Cafeteria" title="Cafeteria" />
+                        <a href="./portifolios/cafe-colunas.html" class="ajax-page-load"></a>
+                      </div>
+                      <!-- Nome do Projeto -->
+                      <i class="far fa-file-alt"></i>
+                      <h4 class="name">Cafeteria</h4>
+                      <span class="category">Detalhes</span>
+                    </figure>
+                    <!-- Fim do Portfólio "category_all",  "category_image" -->
+                    <figure class="item lbimage" data-groups='["category_all", "category_image"]'>
+                      <div class="portfolio-item-img">
+                        <img src=".//img/portfolio/Cafeteria/container1.png" alt="Cafeteria" title="Cafeteria" />
+                        <a class="lightbox" title="Cafeteria" href=".//img/portfolio/Cafeteria/container1.png"></a>
+                      </div>
+                      <!-- Nome do Projeto -->
+                      <i class="fa fa-image"></i>
+                      <h4 class="name">Cafeteria</h4>
+                      <span class="category">Image</span>
+                    </figure>
+                    <!-- Início do Portfólio "category_all",  "category_direct-url" -->
+                    <figure class="item direct" data-groups='["category_all", "category_direct-url"]'>
+                      <div class="portfolio-item-img">
+                        <img src=".//img/portfolio/Cafeteria/clients.png" alt="Direct URL" title="Cafeteria" />
+                        <a target="_blank" href="https://thmedu.github.io/Projeto-Cafeteria/"></a>
+                      </div>
+                      <!-- Nome do Projeto -->
+                      <i class="fa fa-link"></i>
+                      <h4 class="name">Site</h4>
+                      <span class="category">URL</span>
+                    </figure>
+                  </div>
+                  <!-- Fim dos Projeto Cafeteria-->
+
+
+                  <!-- Início dos Projetos Barbearia  -->
+                  <div class="portfolio-grid three-columns shuffle">
+                    <!-- Início do Portfólio "category_all", "category_detailed" -->
+                    <figure class="item standard" data-groups='["category_all", "category_detailed"]'>
+                      <div class="portfolio-item-img">
+                        <img src=".//img/portfolio/Barbearia/heder.png" alt="Barbearia" title="Barbearia" />
+                        <a href="./portifolios/barber.colunas.html" class="ajax-page-load"></a>
+                      </div>
+                      <!-- Nome do Projeto -->
+                      <i class="far fa-file-alt"></i>
+                      <h4 class="name">Barbearia</h4>
+                      <span class="category">Detalhes</span>
+                    </figure>
+                    <!-- Fim do Portfólio "category_all",  "category_image" -->
+                    <figure class="item lbimage" data-groups='["category_all", "category_image"]'>
+                      <div class="portfolio-item-img">
+                        <img src="./img/portfolio/Barbearia/container.png" alt="Barbearia" title="Barbearia" />
+                        <a class="lightbox" title="Cafeteria" href="./img/portfolio/Barbearia/container.png"></a>
+                      </div>
+                      <!-- Nome do Projeto -->
+                      <i class="fa fa-image"></i>
+                      <h4 class="name">Barbearia</h4>
+                      <span class="category">Image</span>
+                    </figure>
+                    <!-- Início do Portfólio "category_all",  "category_direct-url" -->
+                    <figure class="item direct" data-groups='["category_all", "category_direct-url"]'>
+                      <div class="portfolio-item-img">
+                        <img src="img/portfolio/Barbearia/formulario.png" alt="Direct URL" title="Barbearia" />
+                        <a target="_blank" href="https://thmedu.github.io/Projeto-Barbearia/"></a>
+                      </div>
+                      <!-- Nome do Projeto -->
+                      <i class="fa fa-link"></i>
+                      <h4 class="name">Site</h4>
+                      <span class="category">URL</span>
+                    </figure>
+                  </div>
+                  <!-- Fim dos Projeto Barbearia -->
+
+
                 </div>
               </div>
             </div>
-
-
-            <footer class="site-footer clearfix">
-              <div>
-                <a href="https://www.facebook.com/" target="_blank" class="btn"><i class="fab fa-facebook-f"></i> </a>
-                <a href="https://twitter.com/" target="_blank" class="btn"><i class="fab fa-twitter"></i> </a>
-                <a href="https://dribbble.com/" target="_blank" class="btn"><i class="fab fa-dribbble"></i> </a>
-              </div>
-
-              <div class="footer-copyrights">
-                <p>© 2024 Todos os direitos reservados. Thomas.</p>
-              </div>
-            </footer>
-
           </div>
+
+
+          <footer class="site-footer clearfix">
+            <div>
+              <a href="https://www.facebook.com/" target="_blank" class="btn"><i class="fab fa-facebook-f"></i> </a>
+              <a href="https://twitter.com/" target="_blank" class="btn"><i class="fab fa-twitter"></i> </a>
+              <a href="https://dribbble.com/" target="_blank" class="btn"><i class="fab fa-dribbble"></i> </a>
+            </div>
+
+            <div class="footer-copyrights">
+              <p>© 2024 Todos os direitos reservados. Thomas.</p>
+            </div>
+          </footer>
+
         </div>
       </div>
+    </div>
 
-      <script src="js/jquery-2.1.3.min.js"></script>
-      <script src="js/imagesloaded.pkgd.min.js"></script>
-      <script src='../../../../www.google.com/recaptcha/api.js'></script>
-      <script src="js/bootstrap.min.js"></script>
-      <script src='js/jquery.shuffle.min.js'></script>
-      <script src='js/masonry.pkgd.min.js'></script>
-      <script src='js/owl.carousel.min.js'></script>
-      <script src="js/jquery.magnific-popup.min.js"></script>
-      <!-- Certifique-se de que o caminho para o arquivo validator.js está correto -->
-      <script src="js/validator.js"></script>
-      <script src="js/main.js"></script>
+
+
+
+    <script src="./js/contador-atualizacao.js"></script>
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src='../../../../www.google.com/recaptcha/api.js'></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src='js/jquery.shuffle.min.js'></script>
+    <script src='js/masonry.pkgd.min.js'></script>
+    <script src='js/owl.carousel.min.js'></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <!-- Certifique-se de que o caminho para o arquivo validator.js está correto -->
+    <script src="js/validator.js"></script>
+    <script src="js/main.js"></script>
 
 </body>
 

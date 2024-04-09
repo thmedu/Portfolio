@@ -1,26 +1,12 @@
-// Função para obter a data e hora atual formatada
 function getDataAtualFormatada() {
     var dataAtual = new Date();
     var dia = dataAtual.getDate();
-    var mes = dataAtual.getMonth() + 1; // Mês começa de zero, então adicionamos 1
+    var mes = dataAtual.toLocaleString('pt-BR', { month: 'long' }); // Obtém o nome do mês
     var ano = dataAtual.getFullYear();
     var hora = dataAtual.getHours();
     var minutos = dataAtual.getMinutes();
-    var segundos = dataAtual.getSeconds();
 
-    // Formato: DD.MM.AAAA HH:MM:SS
-    var dataFormatada = dia + '.' + mes + '.' + ano + ' ' + hora + ':' + minutos + ':' + segundos;
+    // Formato: DD de MMMM de AAAA 'às' HH:MM
+    var dataFormatada = dia + ' de ' + mes + ' de ' + ano + ' às ' + hora + ':' + (minutos < 10 ? '0' : '') + minutos;
     return dataFormatada;
 }
-
-// Atualiza o texto para exibir a última vez que a página foi atualizada
-function atualizarUltimaAtualizacao() {
-    var ultimaAtualizacaoElemento = document.getElementById('ultima-atualizacao');
-    ultimaAtualizacaoElemento.textContent = getDataAtualFormatada();
-}
-
-// Chamada inicial para atualizar a última vez que a página foi atualizada
-atualizarUltimaAtualizacao();
-
-// Atualiza a cada 1 segundo
-setInterval(atualizarUltimaAtualizacao, 1000);
