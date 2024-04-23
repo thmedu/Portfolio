@@ -4,79 +4,80 @@
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Thomas</title>
+  <title>Inicio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <meta name="description" content="Leven - Resume / CV / vCard Template" />
-  <meta name="keywords" content="vcard, resposnive, retina, resume, jquery, css3, bootstrap, portfolio" />
+  <meta name="keywords" content="vcard, responsive, retina, resume, jquery, css3, bootstrap, portfolio" />
   <meta name="author" content="Thomas" />
   <link rel="shortcut icon" href="./img/icones/code-optimisation.svg">
 
-  <link rel="stylesheet" href="css/normalize.css" type="text/css">
-  <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-  <link rel="stylesheet" href="css/owl.carousel.css" type="text/css">
-  <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
-  <link rel="stylesheet" href="css/main.css" type="text/css">
+  <link rel="stylesheet" href="./css/normalize.css" type="text/css">
+  <link rel="stylesheet" href="./css/bootstrap.min.css" type="text/css">
+  <link rel="stylesheet" href="./css/owl.carousel.css" type="text/css">
+  <link rel="stylesheet" href="./css/magnific-popup.css" type="text/css">
+  <link rel="stylesheet" href="./css/main.css" type="text/css">
 
-  <script src="js/modernizr.custom.js"></script>
+  <script src="./js/modernizr.custom.js"></script>
 </head>
 
 <body class="page">
 
+  <!-- Animação de carregamento -->
   <div class="lm-animated-bg"></div>
-
-  <!-- Loading animation -->
   <div class="preloader">
     <div class="preloader-animation">
       <div class="preloader-spinner">
       </div>
     </div>
   </div>
-  <!-- /Loading animation -->
+  <!-- /Animação de carregamento -->
 
-  <!-- Scroll To Top Button -->
+  <!-- Botão de rolar para o topo -->
   <div class="lmpixels-scroll-to-top"><i class="lnr lnr-chevron-up"></i></div>
-  <!-- /Scroll To Top Button -->
+  <!-- /Botão de rolar para o topo -->
 
   <div class="page-scroll">
     <div id="page_container" class="page-container bg-move-effect" data-animation="transition-flip-in-right">
 
-      <!-- Header -->
+      <!-- Cabeçalho -->
       <header id="site_header" class="header">
         <div class="header-content clearfix">
 
-          <!-- Text Logo -->
+          <!-- Logotipo de texto -->
           <div class="text-logo">
             <a href="index.html">
               <div class="logo-symbol">T</div>
               <div class="logo-text">Eduardo</div>
             </a>
           </div>
-          <!-- /Text Logo -->
+          <!-- /Logotipo de texto -->
 
-          <!-- Navigation -->
+          <!-- Navegação -->
           <div class="site-nav mobile-menu-hide">
             <ul class="leven-classic-menu site-main-menu">
               <li class="menu-item menu-item-has-children current-menu-item">
-                <a href="index.html">Inicio</a>
+                <a href="index.html">Início</a>
               </li>
 
               <li class="menu-item">
-                <a href="resume.html">Resumo</a>
+                <a href="./acs/resume.html">Resumo</a>
               </li>
               <li class="menu-item menu-item-has-children">
-                <a href="portfolio.html">Portfolio</a>
+                <a href="./acs/portfolio.html">Portfólio</a>
               </li>
               <li class="menu-item">
-                <a href="contact.html">Contato</a>
+                <a href="./acs/contact.html">Contato</a>
               </li>
             </ul>
           </div>
 
+          <!-- Alternador de menu móvel -->
           <a class="menu-toggle mobile-visible">
             <i class="fa fa-bars"></i>
           </a>
         </div>
       </header>
+
 
       <div id="main" class="site-main">
         <div id="main-content" class="single-page-content">
@@ -99,27 +100,36 @@
                         <div class="home-text hp-left">
                           <div class="owl-carousel text-rotation">
                             <div class="item">
-                              <h4>Frontend-developer</h4>
+                              <h4>Softwere Developer</h4>
                             </div>
 
                             <div class="item">
-                              <h4>Beckend-developer</h4>
-                            </div>
-
-                            <div class="item">
-                              <h4>Fullstack-developer</h4>
+                              <h4>Fullstack Developer</h4>
                             </div>
                           </div>
 
-                          <h1>Thomas Eduardo</h1>                    
+                          <h1>Thomas Eduardo</h1>
                           <p>
-                            Como desenvolvedor full-stack, estou atualmente concentrado em aprimorar meu domínio de JavaScript, Node.js e React. Constantemente, estou explorando novas tecnologias e refinando minhas habilidades em CSS, Sass, Bootstrap, Vue.js e Angular.  </p>
+                            Como desenvolvedor full-stack, estou atualmente concentrado em aprimorar meu domínio de
+                            JavaScript, Node.js e React. Constantemente, estou explorando novas tecnologias e refinando
+                            minhas habilidades em CSS, Sass, Bootstrap, Vue.js e Angular. </p>
 
                           <div class="home-buttons">
-                            <a href="/img/certificado/Thomas Nascimento (2).pdf" target="_blank" class="btn btn-primary">Download
-                              CV</a>
+                            <!-- Botão de download do CV -->
+                            <a href="/img/certificado/Thomas Nascimento (2).pdf" target="_blank" class="btn btn-primary"
+                              onclick="showEmailInput()">Download CV</a>
+                            <!-- Div para esconder/mostrar o formulário de input -->
+                            <div id="emailInput" style="display: none;">
+                              <form id="emailForm">
+                                <label for="email">Digite seu email:</label>
+                                <input type="email" id="email" name="email" required>
+                                <button type="submit" class="btn btn-primary">Enviar</button>
+                              </form>
+                            </div>
+                            <!-- Botão de contato -->
                             <a href="./contact.html" target="_self" class="btn btn-secondary">Contato</a>
                           </div>
+
                         </div>
                       </div>
                     </div>
@@ -149,7 +159,8 @@
 
                       <div class="ci-text">
                         <h4>Projetos Pessoais</h4>
-                        <p>Busco expandir conhecimento com projetos, explorando tecnologias e desenvolvendo habilidades. </p>
+                        <p>Busco expandir conhecimento com projetos, explorando tecnologias e desenvolvendo habilidades.
+                        </p>
                       </div>
                     </div>
 
@@ -160,7 +171,8 @@
 
                       <div class="ci-text">
                         <h4>Desenvolvimento Web</h4>
-                        <p>Aprimoro constantemente habilidades em frontend e backend, desenvolvendo aplicações web para crescimento profissional..</p>
+                        <p>Aprimoro constantemente habilidades em frontend e backend, desenvolvendo aplicações web para
+                          crescimento profissional..</p>
                       </div>
                     </div>
                   </div>
@@ -177,7 +189,8 @@
 
                       <div class="ci-text">
                         <h4>Automação</h4>
-                        <p>Automatizar processos é essencial para eficiência. Desenvolvo scripts e chatbots para otimizar tarefas e melhorar a experiência do cliente.</p>
+                        <p>Automatizar processos é essencial para eficiência. Desenvolvo scripts e chatbots para
+                          otimizar tarefas e melhorar a experiência do cliente.</p>
                       </div>
                     </div>
 
@@ -189,7 +202,8 @@
 
                       <div class="ci-text">
                         <h4>Chatbot</h4>
-                        <p>Chatbots simplificam interações humanas, automatizando tarefas e melhorando o atendimento ao cliente. Oferecem suporte contínuo, respostas instantâneas e informações precisas..</p>
+                        <p>Chatbots simplificam interações humanas, automatizando tarefas e melhorando o atendimento ao
+                          cliente. Oferecem suporte contínuo, respostas instantâneas e informações precisas..</p>
                       </div>
                     </div>
                   </div>
@@ -220,7 +234,9 @@
 
                         <!-- Testimonial Text -->
                         <div class="testimonial-text">
-                          <p>Python é versátil, usado em diversos projetos, como aplicativos web com Django e Flask, análise de dados com Pandas e automação com scripts simples. Sua natureza intuitiva facilita aprendizado e implementação de soluções.</p>
+                          <p>Python é versátil, usado em diversos projetos, como aplicativos web com Django e Flask,
+                            análise de dados com Pandas e automação com scripts simples. Sua natureza intuitiva facilita
+                            aprendizado e implementação de soluções.</p>
                         </div>
                         <!-- /Testimonial Text -->
 
@@ -255,7 +271,9 @@
 
                         <!-- Testimonial Text -->
                         <div class="testimonial-text">
-                          <p> CSS possibilita designs atraentes e coesos em websites, com recursos avançados para animações, transições e responsividade, adaptáveis a diferentes dispositivos. Dominá-lo é essencial para atender às expectativas estéticas dos usuários.</p>
+                          <p> CSS possibilita designs atraentes e coesos em websites, com recursos avançados para
+                            animações, transições e responsividade, adaptáveis a diferentes dispositivos. Dominá-lo é
+                            essencial para atender às expectativas estéticas dos usuários.</p>
                         </div>
                         <!-- /Testimonial Text -->
 
@@ -292,7 +310,10 @@
 
                         <!-- Testimonial Text -->
                         <div class="testimonial-text">
-                          <p>JavaScript é fundamental no front-end, criando interfaces dinâmicas e interações intuitivas. Sua presença nos navegadores modernos o torna ideal para aprimorar a funcionalidade e usabilidade de aplicações web, desde validação de formulários até aplicativos baseados em AJAX.</p>
+                          <p>JavaScript é fundamental no front-end, criando interfaces dinâmicas e interações
+                            intuitivas. Sua presença nos navegadores modernos o torna ideal para aprimorar a
+                            funcionalidade e usabilidade de aplicações web, desde validação de formulários até
+                            aplicativos baseados em AJAX.</p>
                         </div>
                         <!-- /Testimonial Text -->
 
@@ -527,19 +548,24 @@
           </div>
         </div>
 
-        <script src="js/jquery-2.1.3.min.js"></script>
-        <script src="js/imagesloaded.pkgd.min.js"></script>
-        <script src='../../../../www.google.com/recaptcha/api.js'></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src='js/jquery.shuffle.min.js'></script>
-        <script src='js/masonry.pkgd.min.js'></script>
-        <script src='js/owl.carousel.min.js'></script>
-        <script src="js/jquery.magnific-popup.min.js"></script>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrDf32aQTCVENBhFJbMBKOUTiUAABtC2o"></script>
-        <script src="js/jquery.googlemap.js"></script>
-        <script src="js/validator.js"></script>
-        <script src="js/contador.js"></script>
-        <script src="js/main.js"></script>
-</body>
-
+        <script src="./js/contador.js"></script>
+        <script src="./js/jquery-2.1.3.min.js"></script>
+        <script src="./js/imagesloaded.pkgd.min.js"></script>
+        <script src="https://www.google.com/recaptcha/api.js"></script>
+        <script src="./js/bootstrap.min.js"></script>
+        <script src="./js/jquery.shuffle.min.js"></script>
+        <script src="./js/masonry.pkgd.min.js"></script>
+        <script src="./js/owl.carousel.min.js"></script>
+        <script src="./js/jquery.magnific-popup.min.js"></script>
+        <!-- Certifique-se de que o caminho para o arquivo validator.js está correto -->
+        <script src="./js/validator.js"></script>
+        <script src="./js/main.js"></script>
+        <script arc="./js/acresent.js"></script>
+  
+      </div>
+    </div>
+  </body>
+  
+  </html>
+  
 </html>
