@@ -1,0 +1,183 @@
+@import 'https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700&display=swap';
+@import 'fonts/linear-icons-font/style.css';
+@import 'fonts/fontawesome-free-5.12.1-web/css/all.min.css';
+@import 'fonts/linecons/style.css';
+
+/* Estilos para o container principal */
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 10px; /* Aumentei o padding superior para melhor espaçamento */
+  color: #fff;
+}
+
+.portfolio h1 {
+  font-size: 2rem; /* Ajustei o tamanho da fonte para melhor responsividade */
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  margin-bottom: 20px; /* Adicionei um espaçamento inferior ao título */
+}
+
+.portfolio-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px; /* Aumentei o espaçamento entre os cards */
+  width: 100%; /* Garante que os cards ocupem toda a largura disponível */
+}
+
+@media (min-width: 768px) {
+  .portfolio-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .portfolio h1 {
+    font-size: 1.8rem; /* Ajustei o tamanho da fonte para melhor responsividade */
+  }
+}
+
+@media (min-width: 992px) {
+  .portfolio-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.portfolio-card {
+  position: relative;
+  background-color: #231e2f;
+  border: 2px solid #303030;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.portfolio-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.portfolio-card:hover img {
+  transform: scale(1.03); /* Reduzi o aumento ao passar o mouse para uma transição mais suave */
+}
+
+.portfolio-card .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: rgba(5, 5, 5, 0.9); /* Ajustei a opacidade do fundo */
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 20px;
+}
+
+.portfolio-card:hover .overlay {
+  opacity: 1;
+}
+
+.portfolio-card .overlay h3 {
+  color: #fbfbfb;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.portfolio-card .overlay p {
+  color: #fbfbfb;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.portfolio-card .overlay button {
+  display: inline-block;
+  padding: 10px 14px; /* Aumentei o espaçamento interno */
+  font-size: 1rem;
+  line-height: 1.2;
+  border: 2px solid #6a509e;
+  color: #fff;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.portfolio-card .overlay button:hover {
+  background-color: #6a509e;
+  color: #fff;
+}
+
+.portfolio-fim {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 1rem;
+  line-height: 1.2;
+  border: 2px solid #6a509e;
+  color: #fff;
+  background-color: transparent;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.portfolio-fim:hover {
+  background-color: #6a509e;
+  color: #fff;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* Reduzi o espaçamento entre os ícones sociais */
+  margin-top: 30px;
+}
+
+.social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6a509e;
+  font-size: 1.8rem; /* Reduzi o tamanho dos ícones */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border: 1.6px solid #303030;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.social a:hover {
+  color: #fff;
+  background-color: #6a509e;
+  box-shadow: 0 0 15px rgba(106, 80, 158, 0.5);
+  transform: scale(1.1);
+}
+a {
+  color: #fff;
+  text-decoration: none;
+  outline: none;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out
+}
+
+a:hover {
+  color: #fff;
+  text-decoration: none;
+  outline: none
+}
+
+a:focus {
+  outline: 0;
+  text-decoration: none
+}

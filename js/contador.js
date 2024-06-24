@@ -1,123 +1,87 @@
-  // Função para exibir ou ocultar o menu de opções de download
-  function toggleDropdown() {
-    var dropdown = document.getElementById("cvDropdown");
-    if (dropdown.style.display === "none") {
-        dropdown.style.display = "block";
-    } else {
-        dropdown.style.display = "none";
+  // Definir os contadores iniciais e elementos HTML relacionados
+  const counters = {
+    bugs: { element: document.getElementById('contador-bugs'), value: 1000, dailyIncrease: 1 },
+    study: { element: document.getElementById('contador-estudo'), value: 900, dailyIncrease: 3 },
+    repositories: { element: document.getElementById('contador-repositorios'), value: 19, dailyIncrease: 2 },
+    coffee: { element: document.getElementById('contador-cafe'), value: 3000, dailyIncrease: 5 }
+  };
+
+  // Função para aumentar os contadores com base no aumento diário
+  function increaseCountersDaily() {
+    for (const key in counters) {
+      const counter = counters[key];
+      const dailyIncrease = counter.dailyIncrease;
+      counter.value += dailyIncrease; // Aumentar o valor diário
+      // Atualizar o elemento HTML com o novo valor
+      counter.element.textContent = counter.value;
     }
-}
+  }
 
-const contadorBugsElemento = document.getElementById('contador-bugs');
-const contadorEstudoElemento = document.getElementById('contador-estudo');
-const contadorRepositoriosElemento = document.getElementById('contador-repositorios');
-const contadorCafeElemento = document.getElementById('contador-cafe');
+  // Chamada inicial para aumentar os contadores diariamente
+  increaseCountersDaily();
 
-let contadorBugs = 500;
-let contadorEstudo = 900;
-let contadorRepositorios = 10; // Inicializando com 10 como especificado no HTML
-let contadorCafe = 1285; // Inicializando com 1285 como especificado no HTML
+  // Configurar um intervalo para chamar a função increaseCountersDaily a cada dia (86400000 milissegundos = 1 dia)
+  setInterval(increaseCountersDaily, 86400000);
 
-const explosao = () => {
-    // Adicione aqui o código para o efeito de explosão
-    contadorBugsElemento.textContent = "💥";
-    // Por exemplo, você pode adicionar uma classe CSS para animar a explosão
-    contadorBugsElemento.classList.add("explosao");
-};
 
-const aumentarContadores = () => {
-    // Aumenta os contadores...
-    contadorBugs++;
-    contadorEstudo += 5; // Incremento de 5 horas de estudo por dia
-    contadorRepositorios += 2; // Incremento de 2 repositórios por dia
-    contadorCafe += 4; // Incremento de 4 xícaras de café por dia
+  // Função para aumentar os contadores com animação suave
+  function increaseCountersWithAnimation() {
+    for (const key in counters) {
+      const counter = counters[key];
+      const start = 0;
+      const end = counter.value;
+      const duration = 3000; // Duração da animação em milissegundos
+      animateValue(counter.element, start, end, duration);
+    }
+  }
 
-    // Atualiza os elementos HTML com os novos valores
-    contadorBugsElemento.textContent = contadorBugs;
-    contadorEstudoElemento.textContent = contadorEstudo;
-    contadorRepositoriosElemento.textContent = contadorRepositorios;
-    contadorCafeElemento.textContent = contadorCafe;
-
-    // Adiciona a classe de rotação aos elementos dos ícones, exceto o ícone de bug
-    contadorEstudoElemento.querySelector('i').classList.add('rotate');
-    contadorRepositoriosElemento.querySelector('i').classList.add('rotate');
-    contadorCafeElemento.querySelector('i').classList.add('rotate');
-
-    // Remove a classe de rotação após um curto período de tempo
-    setTimeout(() => {
-        contadorEstudoElemento.querySelector('i').classList.remove('rotate');
-        contadorRepositoriosElemento.querySelector('i').classList.remove('rotate');
-        contadorCafeElemento.querySelector('i').classList.remove('rotate');
-    }, 1000);
-};
-
-// Executa a função de aumentarContadores() imediatamente após a página ser carregada
-window.addEventListener('load', () => {
-    aumentarContadores();
-});
-  // Função para aumentar os contadores com animação
-  const aumentarContadoresComAnimacao = () => {
-    // Aumenta os contadores...
-    contadorBugs++;
-    contadorEstudo += 5; // Incremento de 5 horas de estudo por dia
-    contadorRepositorios += 2; // Incremento de 2 repositórios por dia
-    contadorCafe += 4; // Incremento de 4 xícaras de café por dia
-
-    // Atualiza os elementos HTML com os novos valores de forma animada
-    animateValue('contador-bugs', 0, contadorBugs, 1000);
-    animateValue('contador-estudo', 0, contadorEstudo, 1000);
-    animateValue('contador-repositorios', 0, contadorRepositorios, 1000);
-    animateValue('contador-cafe', 0, contadorCafe, 1000);
-};
-
-// Função para animar o contador de forma suave
-const animateValue = (id, start, end, duration) => {
+  // Função para animar o contador de forma suave
+  function animateValue(element, start, end, duration) {
     let range = end - start;
     let current = start;
     let increment = end > start ? 1 : -1;
     let stepTime = Math.abs(Math.floor(duration / range));
-    let obj = document.getElementById(id);
     let timer = setInterval(() => {
-        current += increment;
-        obj.textContent = current;
-        if (current == end) {
-            clearInterval(timer);
-        }
+      current += increment;
+      element.textContent = current;
+      if (current == end) {
+        clearInterval(timer);
+      }
     }, stepTime);
-};
+  }
 
-// Executa a função de aumentarContadoresComAnimacao imediatamente após a página ser carregada
-window.addEventListener('load', () => {
-    aumentarContadoresComAnimacao();
-});
-
+  // Chamada inicial para aumentar os contadores com animação
+  increaseCountersWithAnimation();
 
   // Função para fazer a requisição para a API do GitHub e preencher as habilidades
   async function fetchGitHubData() {
     const username = 'thmedu'; // Seu nome de usuário no GitHub
-    const apiUrl = `https://api.github.com/users/${username}/repos`;
+    const apiUrl = `https://api.github.com/users/${thmedu}/repos`;
 
     try {
       const response = await fetch(apiUrl);
+      if (!response.ok) {
+        throw new Error('Erro ao recuperar os dados do GitHub');
+      }
       const data = await response.json();
 
-      // Objeto para armazenar as informações das linguagens utilizadas nos repositórios
-      const languages = {};
+      // Verificar se há dados válidos antes de preencher as habilidades
+      if (data && data.length > 0) {
+        const languages = {};
 
-      // Loop através dos repositórios para contar as linguagens utilizadas
-      data.forEach(repo => {
-        const language = repo.language;
-        if (language && language !== null) {
-          if (languages[language]) {
-            languages[language]++;
-          } else {
-            languages[language] = 1;
+        // Loop através dos repositórios para contar as linguagens utilizadas
+        data.forEach(repo => {
+          const language = repo.language;
+          if (language && language !== null) {
+            languages[language] = (languages[language] || 0) + 1;
           }
-        }
-      });
+        });
 
-      // Preencher dinamicamente as habilidades nas seções correspondentes
-      fillSkills(languages);
+        // Preencher dinamicamente as habilidades nas seções correspondentes
+        fillSkills(languages);
+      } else {
+        throw new Error('Nenhum dado válido encontrado no GitHub');
+      }
     } catch (error) {
       console.error('Erro ao recuperar os dados do GitHub:', error);
     }
@@ -126,11 +90,9 @@ window.addEventListener('load', () => {
   // Função para preencher dinamicamente as habilidades nas seções correspondentes
   function fillSkills(languages) {
     const librariesFrameworksSection = document.getElementById('skills_1');
-    const languagesSection = document.getElementById('skills_2');
 
-    // Limpar qualquer conteúdo existente nas seções
+    // Limpar qualquer conteúdo existente na seção
     librariesFrameworksSection.innerHTML = '';
-    languagesSection.innerHTML = '';
 
     // Preencher a seção de bibliotecas e frameworks
     for (const language in languages) {
@@ -150,5 +112,37 @@ window.addEventListener('load', () => {
     }
   }
 
-  // Chamar a função para recuperar os dados do GitHub quando a página carregar
-  window.addEventListener('load', fetchGitHubData);
+  // Função para alternar a visibilidade do menu de opções de download do CV
+  function toggleDropdown() {
+    var cvDropdown = document.getElementById("cvDropdown");
+    cvDropdown.classList.toggle("dropdown-visible");
+
+    // Seleciona o botão de contato
+    var contactButton = document.getElementById("contactButton");
+
+    // Verifica se o menu de opções de download do CV está visível
+    if (cvDropdown.classList.contains("dropdown-visible")) {
+      // Se estiver visível, esconde o botão de contato
+      contactButton.style.display = "none";
+    } else {
+      // Se estiver invisível, mostra o botão de contato
+      contactButton.style.display = "inline-block";
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    // Seleciona o botão de contato
+    var contactButton = document.getElementById("contactButton");
+
+    // Adiciona um listener de evento ao botão de download do CV
+    document.getElementById("cvButton").addEventListener("click", function () {
+      toggleDropdown();
+    });
+
+    // Adiciona um listener de evento ao menu de opções de download do CV
+    var cvDropdown = document.getElementById("cvDropdown");
+    cvDropdown.addEventListener("click", toggleDropdown);
+  });
+
+  // Chamada inicial para carregar dados do GitHub e preencher as habilidades
+  fetchGitHubData();

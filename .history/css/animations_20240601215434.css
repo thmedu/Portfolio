@@ -1,0 +1,142 @@
+/* Animations */
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Apply animations to elements */
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+}
+
+.slideInFromLeft {
+    animation-name: slideInFromLeft;
+}
+
+.slideInFromRight {
+    animation-name: slideInFromRight;
+}
+
+.bounce {
+    animation-name: bounce;
+}
+/* Animations for Form Elements */
+
+.form-group,
+.form-control,
+.form-control:focus,
+.has-error .form-control,
+.has-error .form-control:focus,
+input[type=search],
+input[type=password],
+input[type=text] {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.form-control-border {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.form-group .help-block,
+.form-group-with-icon i,
+.btn-primary,
+.btn-secondary,
+button,
+input[type=button],
+input[type=submit],
+.wp-block-button .wp-block-button__link {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+/* Hover Effects */
+
+.form-group:hover .help-block,
+.form-group-with-icon:hover i,
+.btn-primary:hover,
+.btn-secondary:hover,
+button:hover,
+input[type=button]:hover,
+input[type=submit]:hover,
+.wp-block-button .wp-block-button__link:hover {
+    transform: translateY(-3px);
+}
+
+/* Focus Effects */
+
+.form-control:focus,
+.has-error .form-control:focus,
+input[type=search]:focus,
+input[type=password]:focus,
+input[type=text]:focus {
+    border-color: #0E7AFF; /* Change border color on focus */
+}
+
+.form-control:focus + .form-control-border {
+    left: 0;
+    right: 0;
+    height: 100%;
+    z-index: 1;
+    opacity: 1;
+    border-right-width: 2px;
+}
+
+/* Error State */
+
+.has-error .form-control,
+.has-error .form-control:focus {
+    border-color: #ff4c4c; /* Change border color on error */
+}

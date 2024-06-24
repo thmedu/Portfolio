@@ -1,0 +1,121 @@
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+    display: block;
+}
+
+audio, canvas, video {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+/* Reset CSS */
+/* ... */
+
+/* Global Styles */
+/* ... */
+
+/* Header */
+.header {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .text-logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .logo-symbol {
+    color: #007bff;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 50%;
+  }
+  
+  .logo-text {
+    margin-left: 10px;
+  }
+  
+  .site-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .site-nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+  }
+  
+  .site-nav ul li a {
+    color: #333;
+    transition: color 0.3s ease;
+  }
+  
+  .site-nav ul li a:hover {
+    color: #007bff;
+  }
+  
+  /* Main Content */
+  .page-title {
+    margin-bottom: 30px;
+  }
+  
+  .block-title {
+    margin-bottom: 20px;
+  }
+  
+  ul {
+    padding-left: 20px;
+  }
+  
+  /* Footer */
+  .site-footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    border-top: 1px solid #ddd;
+  }
+  
+  .footer-social {
+    margin-bottom: 20px;
+  }
+  
+  .footer-social-links {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-social-links li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .footer-social-links li a {
+    color: #007bff;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-social-links li a:hover {
+    color: #0056b3;
+  }
+  
+  .footer-copyrights {
+    color: #666;
+  }
+  

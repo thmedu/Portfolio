@@ -1,0 +1,121 @@
+/* Estilos de exemplo para as barras de habilidade */
+.skill-container {
+  width: 100%;
+  background-color: #f0f0f0;
+  height: 20px;
+  margin-bottom: 10px;
+}
+
+.skill-percentage {
+  height: 100%;
+  background-color: #4caf50;
+  width: 0;
+  transition: width 1s ease; /* Transição suave da largura */
+}
+.social {
+  display: flex;
+  justify-content: center; /* Centraliza os ícones horizontalmente */
+  gap: 10px; /* Espaçamento entre os ícones */
+  margin-top: 20px; /* Espaçamento superior */
+}
+
+.social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6a509e;
+  font-size: 1.6rem; /* Tamanho dos ícones reduzido para 1.6rem (equivalente a 16px) */
+  width: 40px; /* Tamanho fixo para manter a proporção */
+  height: 40px; /* Tamanho fixo para manter a proporção */
+  border-radius: 50%; /* Transforma os ícones em círculos */
+  border: 1.2px solid #303030;
+  text-decoration: none; /* Remove o sublinhado padrão dos links */
+  transition: all 0.3s ease-in-out;
+}
+
+.social a:hover {
+  background-color: #6a509e; /* Fundo destacado ao passar o mouse */
+  color: #fff; /* Muda a cor do ícone ao passar o mouse */
+  box-shadow: 0 0 15px rgba(106, 80, 158, 0.5); /* Sombra ao passar o mouse */
+  transform: scale(1.1); /* Aumenta ligeiramente o tamanho ao passar o mouse */
+}
+
+/* Estilos específicos para o rodapé */
+
+.site-footer {
+  display: block;
+  position: relative;
+  margin: 60px -70px -60px;
+  padding: 15px 45px;
+  background-color: #081023;
+  border-top: 2px solid #081023;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px
+}
+
+
+.footer-social-links {
+  list-style: none;
+  padding: 0;
+  text-align: center; /* Centraliza os ícones sociais no rodapé */
+}
+
+.footer-social-links li {
+  display: inline-block;
+  margin-right: 15px; /* Espaçamento entre os itens */
+}
+
+.footer-social-links li:last-child {
+  margin-right: 0;
+}
+
+.footer-social-links li a {
+  color: #ddd;
+  text-decoration: none;
+  font-size: 16px;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.footer-social-links li a:hover {
+  opacity: 1;
+}
+
+.footer-copyrights {
+  text-align: center; /* Centraliza o texto de direitos autorais */
+  margin-top: 20px; /* Espaçamento superior */
+}
+
+.footer-copyrights p {
+  font-size: 13px;
+  line-height: 21px;
+  margin: 0;
+  opacity: 0.6;
+}
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* Reduzi o espaçamento entre os ícones sociais */
+  margin-top: 30px;
+}
+
+.social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6a509e;
+  font-size: 1rem; /* Reduzi o tamanho dos ícones */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border: 1.3px solid #303030;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.social a:hover {
+  color: #fff;
+  background-color: #6a509e;
+  box-shadow: 0 0 15px rgba(106, 80, 158, 0.5);
+  transform: scale(1.1);
+}

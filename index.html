@@ -1,23 +1,27 @@
+</html>
 <!DOCTYPE html>
 <html lang="pt-br" class="no-js">
 
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Inicio</title>
+  <title> Thomas Nascimento | Desenvolvedor Web </title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <meta name="description" content="Leven - Resume / CV / vCard Template" />
   <meta name="keywords" content="vcard, responsive, retina, resume, jquery, css3, bootstrap, portfolio" />
   <meta name="author" content="Thomas" />
-  <link rel="shortcut icon" href="./img/icones/code-optimisation.svg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-8l11ZaFz2b2S2W3bMj7m9u7mQDxZpEh0feIMnjFHzXInuDe/9b2a2ZgUvNdb6GjCszCM2U21bK5B5gH6CRRJmQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.lineicons.com/2.0/LineIcons.css">
+  <link rel="shortcut icon" href="./img/icones/desenvolvedor.png">
 
   <link rel="stylesheet" href="./css/normalize.css" type="text/css">
   <link rel="stylesheet" href="./css/bootstrap.min.css" type="text/css">
   <link rel="stylesheet" href="./css/owl.carousel.css" type="text/css">
   <link rel="stylesheet" href="./css/magnific-popup.css" type="text/css">
   <link rel="stylesheet" href="./css/main.css" type="text/css">
+  <link rel="stylesheet" href="./css/portifolio-card.css" type="text/css">
+
   <script src="./js/modernizr.custom.js"></script>
-  <script src="js/modernizr.custom.js"></script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-9CGGYM4M62"></script>
   <script>
@@ -55,8 +59,7 @@
           <!-- Logotipo de texto -->
           <div class="text-logo">
             <a href="index.html">
-              <div class="logo-symbol">T</div>
-              <div class="logo-text">Eduardo</div>
+              <div class="logo-symbol">TN</div>
             </a>
           </div>
           <!-- /Logotipo de texto -->
@@ -64,18 +67,17 @@
           <!-- Navegação -->
           <div class="site-nav mobile-menu-hide">
             <ul class="leven-classic-menu site-main-menu">
-              <li class="menu-item ">
-                <a href="index.html">Início</a>
-              </li>
-
               <li class="menu-item">
-                <a href="resume.html">Resumo</a>
-              </li>
-              <li class="menu-item ">
-                <a href="portfolio.html">Portfólio</a>
+                <a href="index.html"> Início</a>
               </li>
               <li class="menu-item">
-                <a href="contact.html">Contato</a>
+                <a href="resumo.html"> Resumo</a>
+              </li>
+              <li class="menu-item">
+                <a href="portfolio.html"> Portifolio</a>
+              </li>
+              <li class="menu-item">
+                <a href="contact.html"> Contato</a>
               </li>
             </ul>
           </div>
@@ -85,22 +87,21 @@
             <i class="fa fa-bars"></i>
           </a>
         </div>
-      </header>
 
+      </header>
 
       <div id="main" class="site-main">
         <div id="main-content" class="single-page-content">
           <div id="primary" class="content-area">
             <div id="content" class="page-content site-content single-post" role="main">
               <div class="row">
-                <div class=" col-xs-12 col-sm-12">
+                <div class="col-xs-12 col-sm-12">
                   <div class="home-content">
                     <div class="row flex-v-align">
 
                       <div class="col-sm-12 col-md-5 col-lg-5">
                         <div class="home-photo">
-                          <div class="hp-inner"
-                            style="background-image: url(./img/Perfil/Design_sem_nome-removebg-preview.png);">
+                          <div class="hp-inner" style="background-image: url(./img/Perfil/Foto\ para\ perfil.png);">
                           </div>
                         </div>
                       </div>
@@ -109,364 +110,317 @@
                         <div class="home-text hp-left">
                           <div class="owl-carousel text-rotation">
                             <div class="item">
-                              <h4>Softwere Developer</h4>
+                              <h4>Desenvolvedor Web</h4>
                             </div>
 
                             <div class="item">
-                              <h4>Fullstack Developer</h4>
+                              <h4>Web</h4>
+                            </div>
+                            <div class="item">
+                              <h4>FrontEnd</h4>
+                            </div>
+                            <div class="item">
+                              <h4>UI/UX</h4>
+                            </div>
+                            <div class="item">
+                              <h4>Dev</h4>
                             </div>
                           </div>
 
-                          <h1>Thomas Eduardo</h1>
-                          <p>
-                            Como desenvolvedor full-stack, estou atualmente concentrado em aprimorar meu domínio de
-                            JavaScript, Node.js e React. Constantemente, estou explorando novas tecnologias e refinando
-                            minhas habilidades em CSS, Sass, Bootstrap, Vue.js e Angular. </p>
-
-                          <div class="home-buttons">
-                            <!-- Botão de download do CV -->
-                            <button class="btn btn-primary" onclick="toggleDropdown()">Download CV</button>
-                            <!-- Div para esconder/mostrar o menu de opções de download -->
-                            <div id="cvDropdown" style="display: none;">
-                              <!-- Opções de download do CV -->
-                              <a href="/img/certificado/Thomas Nascimento (2).pdf" target="_blank"
-                                class="btn btn-primary">Português</a>
-                              <a href="/img/certificado/Thomas Nascimento (2)_en.pdf" target="_blank"
-                                class="btn btn-primary">English</a>
-                              <a href="/img/certificado/Thomas Nascimento (2)_es.pdf" target="_blank"
-                                class="btn btn-primary">Español</a>
-                            </div>
-                            <!-- Botão de contato -->
-                            <a href="./contact.html" target="_self" class="btn btn-secondary">Contato</a>
-
+                          <h1>Thomas Nascimento </h1>
+                          <p>Sou desenvolvedor web focado em FrontEnd, em transição para a área de tecnologia. Comecei meus estudos na AWS, onde ganhei uma bolsa para aprender sobre Computação em Nuvem. Atualmente, estudo Desenvolvimento Web na Origameid, focando em melhorar minhas habilidades em FrontEnd e UX/UI Design.</p>
+                          <div class="social">
+                            <a href="https://github.com/thmedu" target="_blank"><i class="lni lni-github"></i></a>
+                            <a href="https://www.instagram.com/thmedu_/" target="_blank"><i class="lni lni-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/thmedu/" target="_blank"><i class="lni lni-linkedin"></i></a>
+                            <a href="https://www.facebook.com/thomasedureis" target="_blank"><i class="lni lni-facebook"></i></a>
                           </div>
                         </div>
+
+
+                        <div class="home-buttons">
+                          <!-- Botão de download do CV -->
+                          <button class="btn btn-primary" id="cvButton" onclick="toggleDropdown()">
+                            <i class="lni lni-download"></i>
+                            <span> Curriculo </span>
+                          </button>
+                          <!-- Div para esconder/mostrar o menu de opções de download -->
+                          <div id="cvDropdown" class="download-options" style="display: none;">
+                            <!-- Opções de download do CV -->
+                            <a href="/img/Curriculo/Thomas Nascimento ( Frontend ).pdf" target="_blank" class="btn btn-primary">Português</a>
+
+                          </div>
+                          <!-- Botão de contato -->
+                          <a href="./contact.html" target="_self" class="btn btn-secondary" id="contactButton">Contato</a>
+                        </div>
+
+
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <!-- Home Page Top Part -->
-
-              <!-- Services -->
-              <div class="row">
-                <div class="col-xs-12 col-sm-12">
-                  <div class="p-50"></div>
-
-                  <div class="block-title">
-                    <h2>O QUE FAÇO</h2>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="col-xs-12 col-sm-6">
-                  <div class="info-list-w-icon">
-                    <div class="info-block-w-icon">
-                      <div class="ci-icon">
-                        <i class="fas fa-project-diagram"></i>
-                      </div>
-
-                      <div class="ci-text">
-                        <h4>Projetos pessoais</h4>
-                        <p> Desenvolvo projetos pessoais inovadores, explorando novas ideias e tecnologias.</p>
-                      </div>
-                    </div>
-
-                    <div class="info-block-w-icon">
-                      <div class="ci-icon">
-                        <i class="fas fa-laptop-code"></i>
-                      </div>
-
-                      <div class="ci-text">
-                        <h4>Páginas web</h4>
-                        <p>Crio páginas web com design intuitivo, proporcionando experiências cativantes aos usuários.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-xs-12 col-sm-6">
-                  <div class="info-list-w-icon">
-
-                    <div class="info-block-w-icon">
-                      <div class="ci-icon">
-                        <i class="fas fa-robot"></i>
-                      </div>
-
-                      <div class="ci-text">
-                        <h4>Desenvolvimento de automação </h4>
-                        <p> Desenvolvo soluções de automação para otimizar processos e aumentar a eficiência
-                          operacional.</p>
-                      </div>
-                    </div>
-
-                    <div class="info-block-w-icon">
-                      <div class="ci-icon">
-                        <i class="fas fa-tasks"></i>
-                      </div>
-
-                      <div class="ci-text">
-                        <h4>Implementação </h4>
-                        <p>Realizo implementações eficazes, garantindo a entrega bem-sucedida de soluções e sistemas.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- /Services -->
-
-              <div class="row">
-                <div class="col-xs-12 col-sm-12">
-                  <div class="p-20"></div>
-
-                  <!-- Testimonials -->
-                  <div class="block-title">
-                    <h2>Tecnologias Utilizadas </h2>
-                  </div>
-
-                  <div id="testimonials_1" class="testimonials owl-carousel" data-mobile-items="1" data-tablet-items="2"
-                    data-items="2">
-                    <!-- Testimonial 1 -->
-                    <div class="testimonial-item">
-                      <!-- Testimonial Content -->
-                      <div class="testimonial-content">
-                        <!-- Picture -->
-                        <div class="testimonial-picture">
-                          <img src="img/testimonials/icons8-js.svg" alt="Java Script" />
-                        </div>
-                        <!-- /Picture -->
-
-                        <!-- Testimonial Text -->
-                        <div class="testimonial-text">
-                          <p>Uso JavaScript para desenvolver interatividade em páginas web, como validação de
-                            formulários, animações e dinamismo de conteúdo, devido à sua ampla compatibilidade com
-                            navegadores e sua capacidade de interagir com o HTML e o CSS diretamente no cliente</p>
-                        </div>
-                        <!-- /Testimonial Text -->
-
-                        <!-- Testimonial author information -->
-                        <div class="testimonial-author-info">
-                          <p class="testimonial-firm"></p>
-                        </div>
-                        <!-- /Testimonial author information -->
-
-                        <div class="testimonial-icon">
-                          <i class="fa fa-quote-left"></i>
-                        </div>
-
-                        <div class="testimonial-icon-big">
-                          <i class="fa fa-quote-right"></i>
-                        </div>
-                      </div>
-                      <!-- /Testimonial Content -->
-                    </div>
-                    <!-- End of Testimonial 1 -->
-
-                    <!-- Testimonial 2 -->
-                    <div class="testimonial-item">
-                      <!-- Testimonial Content -->
-                      <div class="testimonial-content">
-                        <!-- Picture -->
-                        <div class="testimonial-picture">
-                          <img src="img/testimonials/icons8-css.svg" alt="CSS" />
-                        </div>
-                        <!-- /Picture -->
-
-                        <!-- Testimonial Text -->
-                        <div class="testimonial-text">
-                          <p> Utilizo CSS para estilizar e formatar páginas web, tornando-as visualmente atraentes e
-                            coesas. Com CSS, podemos controlar layout, cores, fontes e outros aspectos visuais,
-                            garantindo uma experiência de usuário consistente e agradável.</p>
-                        </div>
-                        <!-- /Testimonial Text -->
-
-                        <!-- Testimonial author information -->
-                        <div class="testimonial-author-info">
-                          <h5 class="testimonial-author"></h5>
-                          <p class="testimonial-firm"></p>
-                        </div>
-                        <!-- /Testimonial author information -->
-
-                        <div class="testimonial-icon">
-                          <i class="fa fa-quote-left"></i>
-                        </div>
-
-                        <div class="testimonial-icon-big">
-                          <i class="fa fa-quote-right"></i>
-                        </div>
-                      </div>
-                      <!-- /Testimonial Content -->
-                    </div>
-                    <!-- End of Testimonial 2 -->
-
-                    <!-- End of Testimonial 3 -->
-                    <div class="testimonial-item">
-
-                      <!-- Testimonial Content -->
-                      <div class="testimonial-content">
-                        <!-- Picture -->
-                        <div class="testimonial-picture">
-                          <img src="img/testimonials/icons8-python.svg" alt="python" />
-                        </div>
-                        <!-- /Picture -->
-
-                        <!-- Testimonial Text -->
-                        <div class="testimonial-text">
-                          <p>JavaScript é fundamental no front-end, criando interfaces dinâmicas e interações
-                            intuitivas. Sua presença nos navegadores modernos o torna ideal para aprimorar a
-                            funcionalidade e usabilidade de aplicações web, desde validação de formulários até
-                            aplicativos baseados em AJAX.</p>
-                        </div>
-                        <!-- /Testimonial Text -->
-
-                        <!-- Testimonial author information -->
-                        <div class="testimonial-author-info">
-
-                          <p class="testimonial-firm"></p>
-                        </div>
-                        <!-- /Testimonial author information -->
-
-                        <div class="testimonial-icon">
-                          <i class="fa fa-quote-left"></i>
-                        </div>
-
-                        <div class="testimonial-icon-big">
-                          <i class="fa fa-quote-right"></i>
-                        </div>
-                      </div>
-                      <!-- /Testimonial Content -->
-
-                    </div>
-                    <!-- End of Testimonial 3 -->
-                  </div>
-                  <!-- /Testimonials -->
-
-                  <div class="p-40"></div>
-
-                  <!-- Clients Slider -->
-                  <div class="block-title">
-                    <h2> Blibliotecas e Frameworks</h2>
-                  </div>
-
-                  <div id="clients_1" class="clients owl-carousel" data-mobile-items="1" data-tablet-items="3"
-                    data-items="6">
-                    <div class="client-block">
-                      <a href="https://www.djangoproject.com/" target="_blank" title="Golden Grid">
-                        <img src="img/clients/icons8-django.svg" alt="django">
-                      </a>
-                    </div>
-
-                    <div class="client-block">
-                      <a href="https://flask.palletsprojects.com/en/3.0.x/" target="_blank" title="flask ">
-                        <img src="img/clients/icons8-frasco.svg" alt="flask">
-                      </a>
-                    </div>
-
-                    <div class="client-block">
-                      <a href="https://react.dev/" target="_blank" title="React.js">
-                        <img src="img/clients/icons8-nativo-de-reagir (1).svg" alt="React.js">
-                      </a>
-                    </div>
-
-                    <div class="client-block">
-                      <a href="https://vuejs.org/" target="_blank" title="Vue">
-                        <img src="img/clients/icons8-visualizar-js.svg" alt="Vue">
-                      </a>
-                    </div>
-
-                    <div class="client-block">
-                      <a href="https://jquery.com/" target="_blank" title="jquery">
-                        <img src="img/clients/icons8-jquery.svg" alt="jquery">
-                      </a>
-                    </div>
-
-                    <div class="client-block">
-                      <a href="https://sass-lang.com/" target="_blank" title="sass">
-                        <img src="img/clients/icons8-sass.svg" alt="sass">
-                      </a>
-                    </div>
-                  </div>
-                  <!-- /Clients Slider -->
-
-                  <div class="p-40"></div>
-
-                </div>
-              </div>
-
-
-              <div class="row">
-                <div class="col-xs-12 col-sm-12">
-                  <div class="block-title">
-                    <h2> Curiosidades</h2>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="col-xs-12 col-sm-3">
-                  <div class="lm-info-block gray-default" id="bugs">
-                    <i class="fas fa-bug"></i>
-                    <h4>Bugs</h4>
-                    <span class="lm-info-block-value" id="contador-bugs">0</span>
-                    <span class="lm-info-block-text">bugs esmagados</span>
-                  </div>
-                </div>
-
-                <div class="col-xs-12 col-sm-3">
-                  <div class="lm-info-block gray-default" id="estudo">
-                    <i class="fas fa-clock"></i>
-                    <h4>Tempo</h4>
-                    <span class="lm-info-block-value" id="contador-estudo">900</span>
-                    <span class="lm-info-block-text">minutos estudados</span>
-                  </div>
-                </div>
-
-                <div class="col-xs-12 col-sm-3 ">
-                  <div class="lm-info-block gray-default" id="repositorios">
-                    <i class="fab fa-github"></i>
-                    <h4>Versionamento </h4>
-                    <span class="lm-info-block-value" id="contador-repositorios">10</span>
-                    <span class="lm-info-block-text">repositórios visitados</span>
-                  </div>
-                </div>
-
-                <div class="col-xs-12 col-sm-3 ">
-                  <div class="lm-info-block gray-default" id="cafe">
-                    <i class="fas fa-coffee"></i>
-                    <h4>Energia do Café</h4>
-                    <span class="lm-info-block-value" id="contador-cafe">1.285</span>
-                    <span class="lm-info-block-text">xícaras consumidas</span>
-                  </div>
-                </div>
-              </div>
-              <div class="p-40"></div>
-
-              <!-- Footer -->
-              <footer class="site-footer clearfix">
-                <div class="footer-social">
-                  <ul class="footer-social-links">
-                    <div>
-                      <a href="https://www.facebook.com/" target="_blank" class="btn"><i class="fab fa-facebook-f"
-                          style="color: #3b5998;"></i></a>
-                      <a href="https://twitter.com/" target="_blank" class="btn"><i class="fab fa-twitter"
-                          style="color: #00acee;"></i></a>
-                      <a href="https://dribbble.com/" target="_blank" class="btn"><i class="fab fa-dribbble"
-                          style="color: #ea4c89;"></i></a>
-                    </div>
-                  </ul>
-                </div>
-
-                <div class="footer-copyrights">
-                  <p>© 2024 Todos os direitos reservados. Thomas.</p>
-                </div>
-              </footer>
-              <!-- /Footer -->
-
             </div>
+            <!-- Home Page Top Part -->
+
+            <!-- Services -->
+            <div class="row">
+              <div class="col-xs-12 col-sm-12">
+                <div class="p-60"></div>
+                <div class="block-title">
+                  <h2>O que eu faço</h2>
+                </div>
+
+                <div class="row">
+                  <div class="col-xs-12 col-sm-6">
+                    <div class="info-list-w-icon">
+                      <div class="info-block-w-icon">
+                        <div class="ci-icon">
+                          <i class="lni lni-layout"></i>
+                        </div>
+                        <div class="ci-text">
+                          <h4>Web Responsivo</h4>
+                          <p>Meu foco é aprimorar a responsividade dos projetos, garantindo uma experiência de usuário fluida e agradável em qualquer dispositivo. Utilizo técnicas avançadas para adaptar interfaces aos diferentes tamanhos de tela.</p>
+                        </div>
+                      </div>
+
+                      <div class="info-block-w-icon">
+                        <div class="ci-icon">
+                          <i class="linecons linecons-pen"></i>
+                        </div>
+                        <div class="ci-text">
+                          <h4>Experiência do Usuário</h4>
+                          <p>Busco constantemente melhorar a experiência do usuário, tornando interfaces intuitivas e eficientes. Utilizo princípios de design centrado no usuário para criar produtos que se destacam pela usabilidade e acessibilidade.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xs-12 col-sm-6">
+                    <div class="info-list-w-icon">
+                      <div class="info-block-w-icon">
+                        <div class="ci-icon">
+                          <i class="lni lni-cog"></i>
+                        </div>
+                        <div class="ci-text">
+                          <h4>Automação</h4>
+                          <p>Implemento automações para otimizar processos, aumentar a eficiência operacional e reduzir erros. Minhas soluções automatizadas não apenas economizam tempo, mas também contribuem para a saúde mental e qualidade de vida dos profissionais.</p>
+                        </div>
+                      </div>
+
+                      <div class="info-block-w-icon">
+                        <div class="ci-icon">
+                          <i class="lni lni-checkmark-circle"></i>
+                        </div>
+                        <div class="ci-text">
+                          <h4>Implementações</h4>
+                          <p>Realizo implementações precisas e eficazes, focando na entrega de soluções de alta qualidade e na superação das expectativas dos clientes. Meu trabalho é marcado pela pontualidade, comprometimento e constante busca por aprendizado e evolução.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="row">
+              <div class="col-xs-12 col-sm-12">
+                <div class="p-20"></div>
+
+                <div class="block-title">
+                  <h2>Tecnologias</h2>
+                </div>
+
+                <div id="clients_1" class="clients owl-carousel" data-mobile-items="1" data-tablet-items="3" data-items="6">
+                  <div class="client-block">
+                    <img src="img/clients/icons8-javascript.svg" alt="JavaScript">
+                  </div>
+                  <div class="client-block">
+                    <img src="img/clients/icons8-nativo-de-reagir (1).svg" alt="React">
+                  </div>
+                  <div class="client-block">
+                    <img src="img/clients/icons8-nó-js.svg" alt="React">
+                  </div>
+                  <div class="client-block">
+                    <img src="img/clients/icons8-visualizar-js.svg" alt="React">
+                  </div>
+                  <div class="client-block">
+                    <img src="img/clients/icons8-jquery.svg" alt="jquery">
+                  </div>
+                  <div class="client-block">
+                    <img src="img/clients/icons8-angular.svg" alt="angular">
+                  </div>
+                </div>
+                <!-- /Clients Slider -->
+                <div class="p-50"></div>
+              </div>
+            </div>
+
+
+            <div class="p-40"></div>
+            <div class="row">
+              <div class="col-xs-12 col-sm-12">
+                <div class="block-title">
+                  <h2>Detalhes</h2>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-xs-12 col-sm-3">
+                <div class="lm-info-block gray-default" id="bugs">
+                  <div class="ci-icon">
+                    <i class="lnr lnr-bug"></i>
+                  </div>
+                  <h4>Soluções</h4>
+                  <span class="lm-info-block-value" id="contador-bugs">50</span>
+                  <span class="lm-info-block-text"></span>
+                </div>
+              </div>
+
+              <div class="col-xs-12 col-sm-3">
+                <div class="lm-info-block gray-default" id="estudo">
+                  <div class="ci-icon">
+                    <i class="linecons linecons-clock"></i>
+                  </div>
+                  <h4>Jornada de Aprendizado</h4>
+                  <span class="lm-info-block-value" id="contador-estudo">1.100 horas</span>
+                  <span class="lm-info-block-text"></span>
+                </div>
+              </div>
+
+              <div class="col-xs-12 col-sm-3">
+                <div class="lm-info-block gray-default" id="repositorios">
+                  <div class="ci-icon">
+                    <i class="linecons linecons-star"></i>
+                  </div>
+                  <h4>Projetos Concluídos</h4>
+                  <span class="lm-info-block-value" id="contador-repositorios">20</span>
+                  <span class="lm-info-block-text"></span>
+                </div>
+              </div>
+
+              <div class="col-xs-12 col-sm-3">
+                <div class="lm-info-block gray-default" id="cafe">
+                  <div class="ci-icon">
+                    <i class="linecons linecons-cup"></i>
+                  </div>
+                  <h4>Reuniões com Café</h4>
+                  <span class="lm-info-block-value" id="contador-cafe">1.285</span>
+                  <span class="lm-info-block-text"></span>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="p-40"></div>
+
+
+            <!-- Pricing -->
+            <div class="row">
+              <div class="col-xs-12 col-sm-12">
+                <div class="block-title">
+                  <h2>Projetos</h2>
+                </div>
+              </div>
+            </div>
+
+            <section class="portfolio" id="portfolio-loc">
+              <div class="portfolio-cards">
+
+                <div class="portfolio-card">
+                  <img src="./img/Fotos-home/6.png" alt="">
+                  <div class="overlay">
+                    <h3>Site da Starbucks</h3>
+                    <p>O site da Starbucks foi desenvolvido para destacar as ofertas da marca, apresentar informações detalhadas sobre seus produtos e serviços de maneira atrativa e funcional.</p>
+                    <button class="btn-cta">
+                      <a href="https://thmedu.github.io/Projeto-Starbucks/" class="btn-cta">
+                        <i class="lni lni-eye"></i> Ver Projeto
+                      </a>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="portfolio-card">
+                  <img src="./img/Fotos-home/4.png" alt="">
+                  <div class="overlay">
+                    <h3>Rede Social para Pets</h3>
+                    <p>Estou animado para compartilhar este projeto em desenvolvimento, uma rede social dedicada aos pets, com funcionalidades únicas para conectar amantes de animais de estimação.</p>
+                    <button class="btn-cta">
+                      <a href="./404.html" class="btn-cta">
+                        <i class="lni lni-eye"></i> Ver Detalhes
+                      </a>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="portfolio-card">
+                  <img src="./img/Fotos-home/3.png" alt="">
+                  <div class="overlay">
+                    <h3>Call of Duty: WWII</h3>
+                    <p>Meu projeto inspirado no jogo Call of Duty: WWII, recriando a atmosfera e o design do site oficial para proporcionar uma experiência imersiva para os fãs do jogo.</p>
+                    <button class="btn-cta">
+                      <a href="https://thmedu.github.io/Call-of-Duty-wwii/" class="btn-cta">
+                        <i class="lni lni-eye"></i> Ver Projeto
+                      </a>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="portfolio-card">
+                  <img src="./img/Fotos-home/2.png" alt="">
+                  <div class="overlay">
+                    <h3>Grand Theft Auto V</h3>
+                    <p>Explore este projeto que recria parte da atmosfera e visual do Grand Theft Auto V usando HTML, CSS e JavaScript para uma experiência interativa e envolvente.</p>
+                    <button class="btn-cta">
+                      <a href="https://thmedu.github.io/GTA-V/" class="btn-cta">
+                        <i class="lni lni-eye"></i> Ver Detalhes
+                      </a>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="portfolio-card">
+                  <img src="./img/Fotos-home/5.png" alt="">
+                  <div class="overlay">
+                    <h3>Cafeteria</h3>
+                    <p>Este projeto foi desenvolvido para proporcionar uma experiência visualmente atraente e funcional, destacando os produtos e serviços exclusivos da cafeteria.</p>
+                    <button class="btn-cta">
+                      <a href="https://thmedu.github.io/Coffee-shop/" class="btn-cta">
+                        <i class="lni lni-eye"></i> Ver Mais
+                      </a>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="portfolio-card">
+                  <img src="./img/Fotos-home/1.png" alt="">
+                  <div class="overlay">
+                    <h3>Pokédex</h3>
+                    <p>Explore esta Pokédex digital que permite aos usuários explorar informações detalhadas sobre diferentes Pokémon, projetada para os fãs da série.</p>
+                    <button class="btn-cta">
+                      <a href="https://thmedu.github.io/Pokedex/" class="btn-cta">
+                        <i class="lni lni-eye"></i> Ver Detalhes
+                      </a>
+                    </button>
+                  </div>
+                </div>
+
+              </div>
+              <button class="portfolio-fim">
+                <a href="portfolio.html"><i class="lni lni-eye"></i> Ver Mais no Portfólio</a>
+              </button>
+            </section>
+
+
+
+            <footer class="site-footer clearfix">
+              <p class="text-align-justify">© 2024 Todos os direitos reservados. Thomas.</p>
           </div>
+          </footer>
+
 
           <script src="./js/contador.js"></script>
           <script src="./js/jquery-2.1.3.min.js"></script>
@@ -480,12 +434,10 @@
           <!-- Certifique-se de que o caminho para o arquivo validator.js está correto -->
           <script src="./js/validator.js"></script>
           <script src="./js/main.js"></script>
-          <script arc="./js/acresent.js"></script>
+          <script src="./js/project.js"></script>
 
         </div>
       </div>
 </body>
-
-</html>
 
 </html>

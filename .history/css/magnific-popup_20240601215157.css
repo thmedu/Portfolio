@@ -1,0 +1,118 @@
+/* Estilos de hover para os links da navegação */
+.site-main-menu a:hover,
+.footer-social-links li a:hover {
+  color: #0E7AFF; /* Cor alterada para destacar */
+  transition: color 0.3s ease; /* Transição suave da cor */
+}
+
+/* Ícones nos títulos das seções */
+.block-title h2:before {
+  content: "\f105"; /* Unicode para um ícone de seta */
+  font-family: "Font Awesome 5 Free";
+  margin-right: 10px;
+  transition: transform 0.3s ease; /* Transição suave do ícone */
+}
+
+/* Espaçamento entre os elementos */
+.page-title,
+.block-title {
+  margin-bottom: 40px;
+}
+
+/* Estilizando os títulos das seções */
+.block-title h2 {
+  font-size: 24px; /* Tamanho do texto aumentado */
+  color: #333; /* Cor alterada para um tom mais escuro */
+  transition: color 0.3s ease; /* Transição suave da cor */
+}
+
+/* Animações sutis */
+.page-title,
+.block-title {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.page-title.in-view,
+.block-title.in-view {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.3s; /* Adicionando atraso na animação para um efeito mais fluido */
+}
+
+/* Estilos para a lista de educação */
+.education {
+  list-style-type: none; /* Removendo marcadores padrão */
+  padding-left: 0; /* Removendo o recuo padrão */
+}
+
+.education li {
+  margin-bottom: 10px; /* Espaçamento entre os itens */
+}
+
+/* Estilos para a lista de habilidades linguísticas */
+.languages {
+  list-style-type: none; /* Removendo marcadores padrão */
+  padding-left: 0; /* Removendo o recuo padrão */
+}
+
+.languages li {
+  margin-bottom: 10px; /* Espaçamento entre os itens */
+}
+
+/* Estilos para a lista de experiência profissional */
+.experience {
+  margin-bottom: 20px; /* Espaçamento entre as seções */
+}
+
+.experience h4 {
+  margin-bottom: 10px; /* Espaçamento entre os títulos e o conteúdo */
+}
+
+.experience p {
+  margin-bottom: 10px; /* Espaçamento entre os parágrafos */
+}
+
+.experience ul {
+  list-style-type: none; /* Removendo marcadores padrão */
+  padding-left: 0; /* Removendo o recuo padrão */
+}
+
+.experience ul li {
+  margin-bottom: 5px; /* Espaçamento entre os itens */
+}
+
+/* Estilos para a lista de cursos e certificados */
+.certificates {
+  list-style-type: none; /* Removendo marcadores padrão */
+  padding-left: 0; /* Removendo o recuo padrão */
+}
+
+.certificates li {
+  margin-bottom: 10px; /* Espaçamento entre os itens */
+}
+
+/* Rodapé */
+.site-footer {
+  padding: 20px 0; /* Espaçamento interno no rodapé */
+}
+
+.footer-social-links li {
+  display: inline-block; /* Exibindo os ícones social em linha */
+  margin-right: 10px; /* Espaçamento entre os ícones */
+}
+
+.footer-social-links li:last-child {
+  margin-right: 0; /* Removendo o espaçamento à direita para o último ícone */
+}
+
+.footer-social-links li a {
+  font-size: 20px; /* Tamanho dos ícones social */
+  color: #333; /* Cor dos ícones social */
+  transition: color 0.3s ease; /* Transição suave da cor */
+}
+
+.footer-social-links li a:hover {
+  color: #0E7AFF; /* Cor alterada para destacar */
+  transition: color 0.3s ease; /* Transição suave da cor */
+}

@@ -1,0 +1,220 @@
+/* Owl Carousel */
+.owl-carousel {
+    display: none;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .owl-carousel .owl-stage {
+    position: relative;
+  }
+  
+  .owl-carousel .owl-stage:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+  }
+  
+  .owl-carousel .owl-stage-outer {
+    position: relative;
+    overflow: hidden;
+    transform: translate3d(0px, 0px, 0px);
+  }
+  
+  .owl-carousel .owl-item {
+    position: relative;
+    min-height: 1px;
+    float: left;
+  }
+  
+  .owl-carousel .owl-item img {
+    display: block;
+    width: 100%;
+  }
+  
+  .owl-carousel .owl-nav.disabled,
+  .owl-carousel .owl-dots.disabled {
+    display: none;
+  }
+  
+  .owl-carousel .owl-nav .owl-prev,
+  .owl-carousel .owl-nav .owl-next,
+  .owl-carousel .owl-dot {
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .owl-carousel.owl-loaded {
+    display: block;
+    opacity: 1;
+  }
+  
+  .owl-carousel.owl-loading {
+    opacity: 0;
+    display: block;
+  }
+  
+  .owl-carousel.owl-hidden {
+    opacity: 0;
+  }
+  
+  .owl-carousel.owl-refresh .owl-item {
+    visibility: hidden;
+  }
+  
+  .owl-carousel.owl-drag .owl-item {
+    user-select: none;
+  }
+  
+  .owl-carousel.owl-grab {
+    cursor: move;
+    cursor: grab;
+  }
+  
+  .owl-carousel.owl-rtl {
+    direction: rtl;
+  }
+  
+  .owl-carousel.owl-rtl .owl-item {
+    float: right;
+  }
+  
+  .owl-carousel .animated {
+    animation-duration: 1000ms;
+    animation-fill-mode: both;
+  }
+  
+  .owl-carousel .owl-animated-in {
+    z-index: 0;
+  }
+  
+  .owl-carousel .owl-animated-out {
+    z-index: 1;
+  }
+  
+  .owl-carousel .fadeOut {
+    animation-name: fadeOut;
+  }
+  
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  /* Owl Carousel Custom */
+  .owl-carousel .owl-item {
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  .owl-carousel .owl-item.active {
+    opacity: 1;
+    transform: scale(1);
+  }
+  <style>
+  /* Adicione estilos CSS adicionais aqui */
+  body {
+      font-family: Arial, sans-serif;
+  }
+
+  .section-title {
+      font-size: 24px;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 20px;
+  }
+
+  .section-content {
+      margin-bottom: 30px;
+  }
+
+  .section-content p {
+      line-height: 1.6;
+      color: #666;
+  }
+
+  .section-content ul {
+      list-style-type: square;
+      margin-left: 20px;
+      color: #666;
+  }
+
+  .section-content li {
+      margin-bottom: 10px;
+  }
+
+  .footer-social-links {
+      padding: 0;
+      margin: 0;
+  }
+
+  .footer-social-links li {
+      display: inline-block;
+      margin-right: 10px;
+  }
+
+  .footer-social-links li:last-child {
+      margin-right: 0;
+  }
+
+  .footer-social-links a {
+      color: #0E7AFF;
+      font-size: 20px;
+  }
+
+  .footer-copyrights {
+      margin-top: 20px;
+      text-align: center;
+      color: #666;
+  }
+  /* Adicionando estilos de hover para os links da navegação */
+.site-main-menu a:hover {
+  color: #0E7AFF; /* Cor alterada para destacar */
+}
+
+.footer-social-links li a:hover {
+  color: #0E7AFF; /* Cor alterada para destacar */
+}
+
+/* Adicionando ícones aos títulos das seções */
+.block-title h2:before {
+  content: "\f105"; /* Unicode para um ícone de seta */
+  font-family: "Font Awesome 5 Free";
+  margin-right: 10px;
+}
+
+/* Ajustando o espaçamento entre os elementos */
+.page-title {
+  margin-bottom: 40px;
+}
+
+.block-title {
+  margin-bottom: 20px;
+}
+
+/* Estilizando os títulos das seções */
+.block-title h2 {
+  font-size: 24px; /* Tamanho do texto aumentado */
+  color: #333; /* Cor alterada para um tom mais escuro */
+}
+
+/* Adicionando animações sutis */
+.page-title, .block-title {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.page-title.in-view, .block-title.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
