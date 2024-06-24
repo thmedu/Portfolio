@@ -163,12 +163,12 @@ p {
     font-weight: 400;
     font-style: normal;
     line-height: 1.75em;
-    color: #d5d5d5
+    color: #6a509e
 }
 
 p {
     font-size: 14px;
-    color: #d5d5d5;
+    color: #6a509e;
     margin: 0 0 10px
 }
 
@@ -482,7 +482,7 @@ input[type=submit]:focus {
 }
 
 .btn-secondary {
-    border-color: #d5d5d5;
+    border-color: #6a509e;
     color: #fff;
     background-color: #231e2f;
     box-shadow: 0 10px 10px -8px rgba(0, 0, 0, .78)
@@ -491,8 +491,8 @@ input[type=submit]:focus {
 .btn-secondary:hover,
 .btn-secondary:focus {
     color: #231e2f;
-    border-color: #d5d5d5;
-    background-color: #d5d5d5
+    border-color: #6a509e;
+    background-color: #6a509e
 }
 
 .mfp-container button {
@@ -1907,7 +1907,7 @@ ul.social-links li:last-child a {
     font-size: 12px;
     font-weight: 500;
     margin: 0 0 5px -40px;
-    color: #d5d5d5;
+    color: #6a509e;
     background-color: #6a509e;
     padding: 0 10px;
     line-height: 23px;
@@ -2294,7 +2294,7 @@ ul.social-links li:last-child a {
 }
 
 .lm-info-block-value {
-    color: #d5d5d5;
+    color: #6a509e;
     font-size: 48px;
     line-height: 52px;
     display: block;
@@ -4927,7 +4927,7 @@ a.post-thumbnail:hover {
     .header::-webkit-scrollbar-thumb,
     .ajax-page-content::-webkit-scrollbar-thumb,
     .blog-sidebar .blog-sidebar-content::-webkit-scrollbar-thumb {
-        background-color: #d5d5d5
+        background-color: #6a509e
     }
 }
 

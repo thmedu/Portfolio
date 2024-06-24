@@ -8,7 +8,7 @@
 
 .skill-percentage {
   height: 100%;
-  background-color: #4caf50;
+  background-color: #6a509e;
   width: 0;
   transition: width 1s ease; /* Transição suave da largura */
 }
