@@ -4887,7 +4887,7 @@ a.post-thumbnail:hover {
 .nothing-found p {
     display: inline-block;
     color: #fff;
-    background-color: #6a509e;
+    background-color: #fff;
     padding: 0 10px;
     font-size: 16px
 }
