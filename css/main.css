@@ -688,7 +688,7 @@ td {
     width: 100%;
     height: 100%;
     z-index: 9999;
-    background-color: #6a509e
+    background-color: #081023
 }
 
 .preloader-animation {
@@ -719,7 +719,7 @@ td {
     }
 
     100% {
-        -webkit-transform: scale(1.1);
+        -webkit-transform: scale(1.8);
         opacity: 0
     }
 }
@@ -731,7 +731,7 @@ td {
     }
 
     100% {
-        -webkit-transform: scale(1.1);
+        -webkit-transform: scale(1.8);
         transform: scale(1.1);
         opacity: 0
     }
@@ -1942,7 +1942,7 @@ ul.social-links li:last-child a {
     display: table;
     table-layout: fixed;
     width: 100%;
-    border: 2px solid #444;
+    border: 2px solid #6A509E;
     border-radius: 8px;
     margin-bottom: 20px;
     -webkit-transition: all 2s ease-in-out;
@@ -1967,11 +1967,11 @@ ul.social-links li:last-child a {
     display: table-cell;
     width: 120px;
     height: 100%;
-    background-color: #444;
-    padding: 25px;
+    background-color: #303030;
+    padding: 10px;
     vertical-align: middle;
-    border-top-left-radius: 6px;
-    border-bottom-left-radius: 6px
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px
 }
 
 .certi-logo img {
@@ -1982,7 +1982,7 @@ ul.social-links li:last-child a {
 .certi-content {
     display: table-cell;
     width: 100%;
-    padding: 20px 25px;
+    padding: 20px 20px;
     vertical-align: middle
 }
 
@@ -1998,11 +1998,11 @@ ul.social-links li:last-child a {
 
 .certi-date {
     font-size: .7em;
-    color: #777;
+    color: #fff;
     opacity: .7
 }
 
-/ .skill-container {
+ .skill-container {
     width: 100%;
     background-color: #f0f0f0;
     height: 20px;

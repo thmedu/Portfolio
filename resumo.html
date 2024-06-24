@@ -169,22 +169,22 @@
 
               <div class="row">
                 <div class=" col-xs-12 col-sm-6 ">
-                  <a href="../../../wp/leven-wp/wp-content/uploads/2019/11/1.jpg" class="lightbox">
+                  <a href="img/certificado/ada-figma.png" class="lightbox">
                     <div class="certificate-item clearfix">
                       <div class="certi-logo">
-                        <img src="img/clients/client-7.png" alt="logo">
+                        <img src="img/certificado/ada.tech.jpg" alt="logo">
                       </div>
 
                       <div class="certi-content">
                         <div class="certi-title">
-                          <h4>Psyhology of Intertnation Design</h4>
+                          <h4>Figma para Devs</h4>
                         </div>
 
                         <div class="certi-id">
-                          <span>Membership ID: XXXX</span>
+                          <span>Concluido</span>
                         </div>
                         <div class="certi-date">
-                          <span>19 April 2018</span>
+                          <span> Jun 2024</span>
                         </div>
 
                         <div class="certi-company">
@@ -196,23 +196,23 @@
                 </div>
 
                 <div class=" col-xs-12 col-sm-6 ">
-                  <a href="../../../wp/leven-wp/wp-content/uploads/2019/11/1.jpg" class="lightbox">
+                  <a href="img/certificado//CUBOS -Desenvolvimento-Softwere.jpg" class="lightbox">
                     <div class="certificate-item clearfix">
                       <div class="certi-logo">
-                        <img src="../../../wp/leven-wp/wp-content/uploads/2019/12/client-1.png" alt="logo">
+                        <img src="img/certificado/cUBOS.png" alt="logo">
                       </div>
 
                       <div class="certi-content">
                         <div class="certi-title">
-                          <h4>Psyhology of Intertnation Design</h4>
+                          <h4>Desenvolvimento de Softwere.</h4>
                         </div>
 
                         <div class="certi-id">
-                          <span>Membership ID: XXXX</span>
+                          <span>Concluido</span>
                         </div>
 
                         <div class="certi-date">
-                          <span>19 April 2018</span>
+                          <span>Marços 2024</span>
                         </div>
 
                         <div class="certi-company">
@@ -222,6 +222,8 @@
                     </div>
                   </a>
                 </div>
+
+
 
               </div>
 
@@ -245,10 +247,10 @@
                       <img src="img/clients/icons8-nativo-de-reagir (1).svg" alt="React">
                     </div>
                     <div class="client-block">
-                      <img src="img/clients/icons8-nó-js.svg" alt="React">
+                      <img src="img/clients/icons8-nó-js.svg" alt="nó">
                     </div>
                     <div class="client-block">
-                      <img src="img/clients/icons8-visualizar-js.svg" alt="React">
+                      <img src="img/clients/icons8-visualizar-js.svg" alt="visualizar">
                     </div>
                     <div class="client-block">
                       <img src="img/clients/icons8-jquery.svg" alt="jquery">
@@ -256,11 +258,22 @@
                     <div class="client-block">
                       <img src="img/clients/icons8-angular.svg" alt="angular">
                     </div>
+                    <div class="client-block">
+                      <img src="img/icones/git.svg" alt="angular">
+                    </div>
+                    <div class="client-block">
+                      <img src="img/icones/django.svg" alt="angular">
+                    </div>
+
+                    <div class="client-block">
+                      <img src="img/clients/icons8-sass.svg" alt="sass">
+                    </div>
                   </div>
+
                   <!-- /Clients Slider -->
                   <div class="p-30"></div>
                 </div>
-              </div> 
+              </div>
               <!---->
 
 
@@ -279,7 +292,7 @@
                       <div class="skill-value">45%</div>
                     </div>
 
-                    <div id="skill_1" data-value="95" class="skill-container">
+                    <div id="skill_1" data-value="45" class="skill-container">
                       <div class="skill-percentage"></div>
                     </div>
                     <!-- /Skill 1 -->
@@ -290,7 +303,7 @@
                       <div class="skill-value">45%</div>
                     </div>
 
-                    <div id="skill_2" data-value="75" class="skill-container">
+                    <div id="skill_2" data-value="45" class="skill-container">
                       <div class="skill-percentage"></div>
                     </div>
                     <!-- /Skill 2 -->
@@ -300,7 +313,7 @@
                       <h4>Figma</h4>
                       <div class="skill-value">65%</div>
                     </div>
-                    <div id="skill_3" data-value="85" class="skill-container">
+                    <div id="skill_3" data-value="65" class="skill-container">
                       <div class="skill-percentage"></div>
                     </div>
                     <!-- Skill 3 -->
@@ -392,17 +405,23 @@
           skillContainers.forEach(function (skillContainer) {
             var skillPercentage = skillContainer.querySelector('.skill-percentage');
             var dataValue = parseInt(skillContainer.getAttribute('data-value'), 10);
-            var width = 0;
+            var currentWidth = 0;
+            var increment = dataValue > 0 ? Math.ceil(dataValue / 200) : 1; // Ajuste o incremento para carregar mais lentamente
+
             var interval = setInterval(function () {
-              if (width >= dataValue) {
+              if (currentWidth >= dataValue) {
                 clearInterval(interval);
               } else {
-                width++;
-                skillPercentage.style.width = width + '%';
+                currentWidth += increment;
+                if (currentWidth > dataValue) {
+                  currentWidth = dataValue; // Garante que a largura não ultrapasse o valor de data-value
+                }
+                skillPercentage.style.width = currentWidth + '%';
               }
-            }, 10); // Ajuste a velocidade da animação ajustando o valor do intervalo (em milissegundos)
+            }, 1000); // Intervalo ajustado para 30 milissegundos para animação mais lenta
           });
         });
+
 
 
       </script>
